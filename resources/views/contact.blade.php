@@ -16,8 +16,10 @@
                         <i class="fa fa-phone text-white"></i>
                     </div>
                     <div class="ps-4">
-                        <h5 class="mb-2">Call to ask any question (WA only)</h5>
-                        <h4 class="text-primary mb-0">+62 813 8930 5438</h4>
+                        <h5 class="mb-2">Call to ask any question</h5>
+                        <a href="https://wa.me/6281247110488" target="_blank" class="text-decoration-none">
+                            <h4 class="text-primary mb-0">+62 812 4711 0488</h4>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -28,7 +30,7 @@
                     </div>
                     <div class="ps-4">
                         <h5 class="mb-2">Email to get free quote</h5>
-                        <h5 class="text-primary mb-0"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=marcom@parakoder.com&su=Lets Get In Touch" target="_blank">marcom@parakoder.com</a></h5>
+                        <h5 class="text-primary mb-0"><a href="mailto:marcom@parakoder.com" target="_blank" class="text-primary">marcom@parakoder.com</a></h5>
                     </div>
                 </div>
             </div>
@@ -38,16 +40,16 @@
                         <i class="fa fa-map text-white"></i>
                     </div>
                     <div class="ps-4">
-                        <h5 class="mb-2">Visit our office (temporary)</h5>
-                        <h5 class="text-primary mb-0">Jl. Akses UI, Tugu, Cimanggis, Depok</h5>
+                        <h5 class="mb-2">Our office</h5>
+                        <h5 class="text-primary mb-0">MTH Square GF A4 A, Jakarta Timur</h5>
                     </div>
                 </div>
             </div>
         </div>
-        
+
     </div>
     <div class="container py-5">
-    <div class="row g-5 mb-5">
+        <div class="row g-5 mb-5">
             <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
                 <form>
                     <div class="row g-3">
@@ -71,7 +73,7 @@
             </div>
             <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                 <iframe class="position-relative rounded w-100 h-100"
-                    src="https://maps.google.com/maps?q=Tugu,%20Kec.%20Cimanggis,%20Kota%20Depok,%20Jawa%20Barat&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1510.5461159970573!2d106.8678734!3d-6.2437096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3313f480f5d%3A0xc881f9660a8b38bb!2sMTH%20Square%20office!5e1!3m2!1sen!2sid!4v1757944392477!5m2!1sen!2sid"
                     frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
             </div>

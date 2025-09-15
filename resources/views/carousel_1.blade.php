@@ -5,9 +5,9 @@
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div class="p-3" style="max-width: 900px;">
                     <h5 class="text-white text-uppercase mb-3 animated slideInDown">Go Digital With Us</h5>
-                    <h1 class="display-1 text-white mb-md-4 animated zoomIn">Solusi Digitalisasi Bisnis Terbaik</h1>
-                    <a href="{{url('/maintenance')}}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Project Terkait</a>
-                    <a href="{{url('/contact')}}" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Hubungi Kami</a>
+                    <h1 class="display-1 text-white mb-md-4 animated zoomIn">The Best Business Digitalization Solutions</h1>
+                    <a href="{{url('/maintenance')}}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Related Projects</a>
+                    <a href="{{url('/contact')}}" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -16,9 +16,9 @@
             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                 <div class="p-3" style="max-width: 900px;">
                     <h5 class="text-white text-uppercase mb-3 animated slideInDown">Go Operate With Us</h5>
-                    <h1 class="display-1 text-white mb-md-4 animated zoomIn">Operasikan Sistem Bisnis Anda</h1>
-                    <a href="{{url('/maintenance')}}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Project Terkait</a>
-                    <a href="{{url('/contact')}}" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Hubungi Kami</a>
+                    <h1 class="display-1 text-white mb-md-4 animated zoomIn">Operate Your Business Systems</h1>
+                    <a href="{{url('/maintenance')}}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Related Projects</a>
+                    <a href="{{url('/contact')}}" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
                 </div>
             </div>
         </div>

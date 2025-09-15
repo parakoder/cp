@@ -3,32 +3,26 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Parakoder - Best IT Solution</title>
+    <title>Parakoder - PT Teknologi Belanja Utama</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="parakoder" name="keywords">
     <meta content="it solution" name="description">
     <meta name="thumbnail" content="https://i.ibb.co/VJXMx3Y/New-Project-3.jpg" />
 
-    <!-- Favicon -->
     <link href="{{asset('img/parakoder_blue.png')}}" rel="icon">
 
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="{{asset('css/fontgoogleapis.css')}}" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
     <link href="{{asset('lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
     <link href="{{asset('lib/animate/animate.min.css')}}" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <style>
         .float{
@@ -54,17 +48,12 @@
 </head>
 
 <body>
-    <a href="https://wa.link/3e3wf5" class="float" target="_blank">
+    <a href="https://wa.me/6281247110488?text=Halo%20Parakoder" class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
-    <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner"></div>
     </div>
-    <!-- Spinner End -->
-
-
-    <!-- Navbar & Carousel Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="{{url('/')}}" class="navbar-brand p-0">
@@ -75,40 +64,45 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="{{url('/')}}" class="nav-item nav-link {{($page=='home')?'active':''}}">Beranda</a>
-                    <a href="{{url('/about')}}" class="nav-item nav-link {{($page=='about')?'active':''}}">Tentang</a>
+                    <a href="{{url('/')}}" class="nav-item nav-link {{($page=='home')?'active':''}}">Home</a>
+                    <a href="{{url('/about')}}" class="nav-item nav-link {{($page=='about')?'active':''}}">About Us</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle {{($page=='service')?'active':''}}" data-bs-toggle="dropdown">Layanan</a>
+                        <a href="#" class="nav-link dropdown-toggle {{($page=='service')?'active':''}}" data-bs-toggle="dropdown">Services</a>
                         <div class="dropdown-menu m-0">
                             <a href="{{url('/service?service-id=web-development')}}" class="dropdown-item">Web Development</a>
                             <a href="{{url('/service?service-id=mobile-development')}}" class="dropdown-item">Mobile Development</a>
+                            <a href="{{url('/service?service-id=custom-development')}}" class="dropdown-item">Custom Software Development</a>
+                            <a href="{{url('/service?service-id=cloud-devops')}}" class="dropdown-item">Cloud Services & DevOps</a>
+                            <a href="{{url('/service?service-id=consulting-digital-strategy')}}" class="dropdown-item">IT Consulting & Digital Strategy</a>
+                            <a href="{{url('/service?service-id=qa-testing')}}" class="dropdown-item">Quality Assurance (QA) & Testing</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle {{($page=='solution')?'active':''}}" data-bs-toggle="dropdown">Solusi</a>
+                        <a href="#" class="nav-link dropdown-toggle {{($page=='solution')?'active':''}}" data-bs-toggle="dropdown">Products</a>
                         <div class="dropdown-menu m-0">
-                            <a href="{{url('/solution?solution-id=system-integration')}}" class="dropdown-item">System Integration</a>
-                            <a href="{{url('/solution?solution-id=it-infrastructure')}}" class="dropdown-item">IT Infrastructure</a>
+                            <a href="{{url('/solution?solution-id=digital-signage')}}" class="dropdown-item">Digital Signage</a>
+                            <a href="{{url('/solution?solution-id=ecommerce')}}" class="dropdown-item">E-commerce Platform</a>
+                            <a href="{{url('/solution?solution-id=ims')}}" class="dropdown-item">Inventory Management System</a>
+                            <a href="{{url('/solution?solution-id=crm')}}" class="dropdown-item">Custom CRM</a>
+                            <a href="{{url('/solution?solution-id=devops')}}" class="dropdown-item">DevOps Automation Pipeline</a>
                         </div>
                     </div>
-                    <a href="{{url('/maintenance')}}" class="nav-item nav-link {{($page=='carer')?'active':''}}">Karir</a>
-                    <a href="{{url('/contact')}}" class="nav-item nav-link {{($page=='contact')?'active':''}}">Kontak</a>
+                    <a href="{{url('/maintenance')}}" class="nav-item nav-link {{($page=='carer')?'active':''}}">Join Us</a>
+                    <a href="{{url('/contact')}}" class="nav-item nav-link {{($page=='contact')?'active':''}}">Contact Us</a>
                 </div>
             </div>
         </nav>
         @includeWhen(Request::is('/'), 'carousel_1')
-        @includeWhen(Request::is('about'), 'carousel_2')   
-        @includeWhen(Request::is('contact'), 'carousel_3') 
+        @includeWhen(Request::is('about'), 'carousel_2')    
+        @includeWhen(Request::is('contact'), 'carousel_3')
         @includeWhen(Request::is('service'), 'carousel_4')
         @includeWhen(Request::is('solution'), 'carousel_5')
         @includeWhen(Request::is('installation'), 'carousel_7')
-        @includeWhen(Request::is('maintenance'), 'carousel_6')   
+        @includeWhen(Request::is('maintenance'), 'carousel_6')    
     </div>
-    <!-- Navbar & Carousel End -->
     @includeWhen(Request::is('/'), 'facts')
     @yield('content')
 
-    <!-- Vendor Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5 mb-5">
             <div class="bg-white">
@@ -126,9 +120,6 @@
             </div>
         </div>
     </div>
-    <!-- Vendor End -->
-
-    <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">
@@ -136,9 +127,9 @@
                     <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
                         <img src="{{asset('img/parakoder_white.png')}}" class="img-fluid" width="60" height="40" alt="image">
                         <br>
-                        <h3 class="m-0 text-white">Parakoder IT Solution</h3>
+                        <h3 class="m-0 text-white">PT Teknologi Belanja Utama</h3>
                         
-                        <p class="mt-3 mb-4">Mengubah proses bisnis dengan menghadirkan solusi digital dengan platform dan teknologi terbaik. kolaborasikan ide digitalisasi bersama parakoder untuk masa depan bisnis yang lebih baik.</p>
+                        <p class="mt-3 mb-4">Transform business processes by providing digital solutions with the best platforms and technologies. Collaborate on digitalization ideas with Parakoder for a better business future.</p>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-6">
@@ -149,15 +140,15 @@
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">Cimanggis, Depok, Jawa Barat</p>
+                                <p class="mb-0">MTH Square GF A4 A, Jl. Letjen M.T. Haryono Kav. 10, Bidara Cina, Jatinegara, Jakarta Timur, DKI Jakarta</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">marcom@parakoder.com</p>
+                                <a href="mailto:syafril.rahimansyah@parakoder.com" style="color: white;">syafril.rahimansyah@parakoder.com</a>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+62 813 8930 5438 (WA only)</p>
+                                <a href="tel:+6281247110488" style="color: white;">+62 812-4711-0488</a>
                             </div>
                             <div class="d-flex mt-4">
                                 <a class="btn btn-primary btn-square me-2" href="https://twitter.com/parakoder" target="_blank"><i class="fab fa-twitter fw-normal"></i></a>
@@ -172,9 +163,7 @@
                             <div class="link-animated d-flex flex-column justify-content-start">
                                 <a class="text-light mb-2" href="{{url('/')}}"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
                                 <a class="text-light mb-2" href="{{url('/about')}}"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="{{url('/service?service-id=web-development')}}"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="{{url('/maintenance')}}"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-light mb-2" href="{{url('/maintenance')}}"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Project</a>
+                                <a class="text-light mb-2" href="{{url('/service?service-id=web-development')}}"><i class="bi bi-arrow-right text-primary me-2"></i>Services</a>
                                 <a class="text-light" href="{{url('/contact')}}"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                             </div>
                         </div>
@@ -188,20 +177,15 @@
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">PARAKODER SOFTWAREHOUSE</a>. All Rights Reserved.
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">PT TEKNOLOGI BELANJA UTAMA</a>. All Rights Reserved.
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/jsdelivr.min.js')}}"></script>
     <script src="{{asset('lib/wow/wow.min.js')}}"></script>
@@ -210,7 +194,6 @@
     <script src="{{asset('lib/counterup/counterup.min.js')}}"></script>
     <script src="{{asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
-    <!-- Template Javascript -->
     <script src="{{asset('js/main.js')}}"></script>
 </body>
 

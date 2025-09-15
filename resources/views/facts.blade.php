@@ -1,4 +1,3 @@
-<!-- Facts Start -->
 <div class="container-fluid facts py-5 pt-lg-0">
     <div class="container py-5 pt-lg-0">
         <div class="row gx-0">
@@ -9,7 +8,7 @@
                     </div>
                     <div class="ps-4">
                         <h2 class="text-white mb-0">Cost Effective</h2>
-                        <p class="text-white mb-0">Biaya Project Terjangkau</p>
+                        <p class="text-white mb-0">Affordable Project Costs</p>
                     </div>
                 </div>
             </div>
@@ -20,7 +19,7 @@
                     </div>
                     <div class="ps-4">
                         <h2 class="text-primary mb-0">Quality</h2>
-                        <p class="mb-0">Hasil Kerja Berkualitas</p>
+                        <p class="mb-0">Quality Work Results</p>
                     </div>
                 </div>
             </div>
@@ -31,11 +30,10 @@
                     </div>
                     <div class="ps-4">
                         <h2 class="text-white mb-0">Technologies</h2>
-                        <p class="text-white mb-0">Menggunakan Teknologi Terkini</p>
+                        <p class="text-white mb-0">Using the Latest Technology</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Facts Start -->
