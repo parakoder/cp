@@ -38,7 +38,7 @@
         </div>
         <div class="row g-4 text-center">
             @foreach($advantages as $advantage)
-            <div class="col-md-4 wow zoomIn" data-wow-delay="{{ 0.2 + ($loop->index * 0.2) }}s">
+            <div class="col-md-4 wow zoomIn" data-wow-delay="{{ 0.2 + ($loop->index * 0.2) }}s" style="margin-top:10px">
                 <div class="d-flex flex-column align-items-center">
                     <i class="{{ $advantage->fa_icon }}"></i>
                     <h5 class="mt-2">{{ $advantage->title }}</h5>

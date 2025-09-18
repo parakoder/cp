@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SolutionController;
+use App\Http\Controllers\ContactFormController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,3 +33,5 @@ Route::resource('/solution', SolutionController::class);
 Route::get('/maintenance', function () {
     return view('maintenance', ['page'=>'maintenance']);
 });
+
+Route::post('/contact', [ContactFormController::class, 'submit'])->name('contact.submit');

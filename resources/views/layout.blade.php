@@ -84,7 +84,6 @@
                             <a href="{{url('/solution?solution-id=ecommerce')}}" class="dropdown-item">E-commerce Platform</a>
                             <a href="{{url('/solution?solution-id=ims')}}" class="dropdown-item">Inventory Management System</a>
                             <a href="{{url('/solution?solution-id=crm')}}" class="dropdown-item">Custom CRM</a>
-                            <a href="{{url('/solution?solution-id=devops')}}" class="dropdown-item">DevOps Automation Pipeline</a>
                         </div>
                     </div>
                     <a href="{{url('/maintenance')}}" class="nav-item nav-link {{($page=='carer')?'active':''}}">Join Us</a>

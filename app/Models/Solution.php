@@ -9,4 +9,7 @@ class Solution extends Model
 {
     use HasFactory;
     protected $table = "solution";
+    protected $primaryKey = 'id';
+    protected $keyType = 'string';
+    public $incrementing = false;
 }

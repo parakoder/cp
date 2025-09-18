@@ -9,4 +9,7 @@ class Service extends Model
 {
     use HasFactory;
     protected $table = "service";
+    protected $primaryKey = 'id';
+    protected $keyType = 'string';
+    public $incrementing = false;
 }
